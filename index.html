@@ -4,24 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Esse projeto foi elaborado para reproduzir o layout inicial do instagram">
+    <meta
+      name="description"
+      content="Esse projeto foi elaborado para reproduzir o layout inicial do instagram"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Instagram</title>
   </head>
   <body>
     <section class="container-imagens">
       <img src="https://i.ibb.co/rH5G6Db/celular.png" class="img-celular" />
-      <img src="https://i.ibb.co/vqJcTvW/insta1.png" class="insta-img">
-      <img src="https://i.ibb.co/QCkSWkS/insta2.png" class="insta-img" id="troca-imagem">
+      <img src="https://i.ibb.co/vqJcTvW/insta1.png" class="insta-img" />
+      <img
+        src="https://i.ibb.co/QCkSWkS/insta2.png"
+        class="insta-img"
+        id="troca-imagem"
+      />
     </section>
 
     <main class="container-itens">
       <section class="container-form">
-        <img src="https://i.ibb.co/Hh0MBsg/insta-logo.png"  class="insta-logo"/>
+        <img src="https://i.ibb.co/Hh0MBsg/insta-logo.png" class="insta-logo" />
         <input placeholder="Telefone, nome do usuário ou email" />
         <input placeholder="Senha" />
         <button>Entrar</button>
-        <section class="open-fb"> 
+        <section class="open-fb">
           <a class="link"> Entrar com o Facebook </a>
           <a class="esqueceu-senha"> Esqueceu a senha? </a>
         </section>
@@ -35,11 +42,33 @@
       <p class="app">Obtenha o aplicativo.</p>
 
       <section class="open-for-app">
-        <img src="https://i.ibb.co/pw0H1PF/ios.png" alt="logo-do-ios" class="logo-app" />
-        <img src="https://i.ibb.co/JQSxRLZ/google.png" alt="logo-do-google" class="logo-app" />
+        <img
+          src="https://i.ibb.co/pw0H1PF/ios.png"
+          alt="logo-do-ios"
+          class="logo-app"
+        />
+        <img
+          src="https://i.ibb.co/JQSxRLZ/google.png"
+          alt="logo-do-google"
+          class="logo-app"
+        />
       </section>
     </main>
 
-    <script src="/script.js"></script>
+    <script>
+      let imagem = document.getElementById("troca-imagem");
+
+      function trocaImagem() {
+        if (imagem.style.opacity == 0) {
+          imagem.style.opacity = 1;
+        } else {
+          imagem.style.opacity = 0;
+        }
+      }
+
+      setInterval(function () {
+        trocaImagem();
+      }, 4000);
+    </script>
   </body>
 </html>
