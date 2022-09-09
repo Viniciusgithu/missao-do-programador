@@ -21,6 +21,18 @@ body {
   width: 350px;
 }
 
+.container-imagems {
+  position: relative;
+}
+
+.insta-img {
+  height: 410px;
+  left: 450px;
+  top: 110px;
+  position: absolute;
+}
+
+
 .container-itens {
   width: 350px;
 }
@@ -30,21 +42,29 @@ body {
   flex-direction: column;
   border: 1px solid #dbdbdb;
   background: #ffffff;
-  padding: 50px;
+  padding: 50px 40px 20px 40px;
  }
 
 input {
-  padding: 5px;
+  height: 36px;
+  outline: none;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding-left: 5px;
+  margin-top: 5px;
   margin: 2px;
+  color: #262626;
 }
 
 button {
   background: #0095F6;
   color: white;
-  margin-top: 5px;
+  height: 30px;
+  margin-top: 20px;
   border: none;
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 8px;
+  cursor: pointer;
 }
 
 .open-fb {
@@ -54,25 +74,25 @@ button {
   margin-top: 10px;
 }
 
-
-
-.separation::before {
-  content: '----------------';
-}
-
-.separation::after {
-  content: '----------------';
-}
-
 .link {
   margin-top: 15px;
-  color: #0095F6
+  color: #385185;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
-.link::before {
-  content: '';
-  i
+.acount {
+  color: #385185;
+  cursor: pointer;
+  font-weight: bold;
 }
+
+.esqueceu-senha {
+  color: #385185;
+  cursor: pointer;
+}
+
 
 .info {
   display: flex;
@@ -82,7 +102,7 @@ button {
   background: #ffffff;
   margin: 10px 0 10px;
   padding: 10px 0;
- 
+  gap: 3px;
 }
 
 
@@ -99,7 +119,12 @@ span {
 
 .open-for-app {
   display: flex;
-  height: 50px;
-  width: 50px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-app {
+  width: 150px;
+  cursor: pointer;
 }
 
