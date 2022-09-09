@@ -3,6 +3,7 @@
 <p> ✔️ Técnicas e tecnologias utilizadas: <br> 
   :o: HTML
   :o: CSS
+  :o: JavaScript
 </p>
 <br> 
 <p> :calendar: Realizada nas datas: <br> 
